@@ -4,12 +4,12 @@ public class a2StaticSynchronizedExchanger {
 
     private static Object obj = null;
 
-    public static  Object getObject() {
+    public static synchronized Object getObject() {
         System.out.println("Get : "+obj);
         return obj;
     }
 
-    public static  void setObject(Object o) {
+    public static synchronized void setObject(Object o) {
         obj = o;
         System.out.println("Set : "+obj);
     }
