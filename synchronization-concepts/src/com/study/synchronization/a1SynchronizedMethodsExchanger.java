@@ -13,7 +13,7 @@ public class a1SynchronizedMethodsExchanger {
         this.obj = obj;
     }
 
-    public synchronized Object getObject() {
+    public Object getObject() {
         synchronized (this) {
             System.out.println("Get Object : "+obj);
             return obj;
